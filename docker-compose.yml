@@ -9,7 +9,7 @@ services:
   
   site-vitrine:
     build:
-      context: ../crazycharlyday-vitrine
+      context: ./site-vitrine
       dockerfile: Dockerfile
     ports:
       - "8081:80"
