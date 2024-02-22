@@ -11,7 +11,7 @@ const cardsContent = {
   cook: {
     icon: <ChefHat />,
     title: "Rejoindre une activité",
-    href: "/activites",
+    href: "/activity",
   },
   profile: {
     icon: <FlaskConical />,
