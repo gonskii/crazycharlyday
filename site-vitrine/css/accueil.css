@@ -213,12 +213,12 @@ main>h1 {
     height: 0.5rem;
     border-radius: 50%;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.95;
     transition: opacity ease 250ms;
 }
 
 .slider-bar a:hover {
-    opacity: 1;
+    opacity: 1.2;
 }
 
 
@@ -235,7 +235,7 @@ footer {
 footer div {
     color: #DFE1E5;
     border-left: 1px inset #fff;
-    padding-left: 20px!important;
+    padding-left: 20px !important;
 }
 
 footer div a {
@@ -263,15 +263,15 @@ footer div a {
         height: auto;
     }
 
-    main > .article1 {
+    main>.article1 {
         width: 90%;
     }
 
-    main > .article1 > .fondVert {
+    main>.article1>.fondVert {
         grid-column: span 12;
     }
 
-    main > .article1 > .contenu {
+    main>.article1>.contenu {
         grid-column: span 12;
     }
 
@@ -280,31 +280,24 @@ footer div a {
         padding-right: 20px;
     }
 
-    .article2 > p {
+    .article2>p {
         width: 100%;
     }
 
     footer {
-        flex-direction: column;
+        display: inline-block;
         justify-content: center;
         align-items: center;
+        text-align: justify;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
     footer div {
         border-left: none;
-        padding-left: 0;
         margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    footer div:last-child {
-        margin-bottom: 0;
-    }
-
-    footer div a {
-        padding-bottom: 0;
-    }
 
     header {
         flex-direction: column;
@@ -312,26 +305,29 @@ footer div a {
         align-items: center;
         margin: 0 auto;
         padding: 5px 10px;
-      }
+    }
 
-    
-      header > .nav > ul {
+
+    header>.nav>ul {
         flex-direction: column;
         justify-content: flex-end;
-        gap: 10px; /* Gap between menu items */
-      }
-    
-      header > .nav > ul > li {
-        padding-right: 10px; /* Add some space between items */
-      }
+        gap: 10px;
+        /* Gap between menu items */
+    }
+
+    header>.nav>ul>li {
+        padding-right: 10px;
+        /* Add some space between items */
+    }
 }
 
 @media screen and (max-width: 480px) {
-    main > .article1 {
+    main>.article1 {
         width: 100%;
     }
 
-    main > .article1 > .fondVert, main > .article1 > .contenu {
+    main>.article1>.fondVert,
+    main>.article1>.contenu {
         padding: 10px;
     }
 
@@ -339,5 +335,3 @@ footer div a {
         height: 200px;
     }
 }
-
-
