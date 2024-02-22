@@ -23,7 +23,7 @@ const RegisterPage = () => {
             />
 
             <div id="containerRegister">
-                <h1 className='font-archivoBlack'>Register now ! 👋</h1>
+                <h1 className='font-archivoBlack'>Inscrivez-vous ! 👋</h1>
 
                 <form onSubmit={handleSubmit}>
                     <InputImg label="Nom" IconComponent={UserRound} typeInput="email" />
@@ -32,7 +32,7 @@ const RegisterPage = () => {
 
                     <InputImg label="Mot de passe" IconComponent={LockKeyhole} typeInput="password" />
 
-                    <InputImg  label="Confirmer mot de passe" IconComponent={LockKeyhole} typeInput="password" />    
+                    <InputImg label="Confirmer mot de passe" IconComponent={LockKeyhole} typeInput="password" />
 
                     <button className="font-bold" id="buttonInscription">Inscription</button>
 

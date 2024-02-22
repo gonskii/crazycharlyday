@@ -1,12 +1,16 @@
+import DashboardCards from "./_components/dashboard-cards";
+import NextActivities from "./_components/next-activities";
+
 const UserDashboard = () => {
-    return ( 
-        <>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-archivoBlack font-bold">
-          Bienvenue{" "}
-        </h1>        
-        <p>this is inter text</p>
-        </>
-     );
-}
- 
+  return (
+    <div className="flex flex-row">
+      <DashboardCards />
+      <div className="bg-zinc-400 ">
+      </div>
+      {/* Barre verticale grise */}
+      <NextActivities />
+    </div>
+  );
+};
+
 export default UserDashboard;

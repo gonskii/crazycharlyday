@@ -23,18 +23,18 @@ const LoginPage = () => {
             />
 
             <div id="containerLogin">
-                <h1 className='font-archivoBlack'>Welcome Back ! 👋</h1>
+                <h1 className='font-archivoBlack'>Bienvenue 👋</h1>
 
                 <form onSubmit={handleSubmit}>
                     <InputImg label="Email" IconComponent={Mail} typeInput="email" />
 
-                    <InputImg label="Password" IconComponent={LockKeyhole} typeInput="password" />
+                    <InputImg label="Mot de passe" IconComponent={LockKeyhole} typeInput="password" />
 
                     <p id="forgotPassword">Mot de passe oublié</p>
 
-                    <button id="buttonConnetion">Sign In</button>
+                    <button id="buttonConnetion">Connexion</button>
 
-                    <p id="register">Not a member ? Register now</p>
+                    <p id="register">Pas un membre ? Rejoins-nous !</p>
                 </form>
             </div>
         </div>
