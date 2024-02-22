@@ -4,8 +4,8 @@ import { User } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-4 py-2 bg-zinc-100 text-white overflow-x-hidden max-h-20 sticky">
-        <Link href="/" className="flex items-center justify-center">
+    <header className="flex items-center justify-between px-4 py-2 bg-zinc-100 text-white overflow-x-hidden max-h-20 sticky overflow-hidden">
+        <Link href="/dashboard" className="flex items-center justify-center">
           <Image
             src="/logo.svg"
             alt="Logo de l'entreprise"

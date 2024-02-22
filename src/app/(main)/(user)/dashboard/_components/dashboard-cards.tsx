@@ -21,7 +21,7 @@ const cardsContent = {
   proposal: {
     icon: <Upload />,
     title: "Proposer une activité",
-    href: "/proposal",
+    href: "/ideas",
   },
 };
 
@@ -44,12 +44,12 @@ const DashboardCards = () => {
         <h1 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-archivoBlack font-bold">
           Bienvenue User
         </h1>
-        <div className="flex flex-col justify-between gap-y-40"> {/* Conteneur flex pour les cartes et l'autre élément */}
-          <div className="flex flex-row gap-52 md:w-1/2"> {/* Conteneur pour les cartes */}
+        <div className="flex flex-col justify-between gap-y-10"> {/* Conteneur flex pour les cartes et l'autre élément */}
+          <div className="flex flex-row gap-20 md:w-1/2"> {/* Conteneur pour les cartes */}
             {controlCards[0]}
             {controlCards[1]}
           </div>
-          <div className="flex flex-row gap-52 md:w-1/2"> {/* Conteneur pour les cartes */}
+          <div className="flex flex-row gap-20 md:w-1/2"> {/* Conteneur pour les cartes */}
             {/* Ajoutez votre autre élément  ici */}
             {controlCards[2]}
             {controlCards[3]}
