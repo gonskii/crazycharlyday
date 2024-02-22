@@ -20,25 +20,25 @@ const Header = () => {
       <nav className="flex items-center space-x-4 text-gray-700">
         <ul className="flex items-center space-x-4">
           <li>
-            <Link href="/about" className="hover:text-black hover:font-bold">
+            <Link href="/https://crazycharlyday.mingot.ovh/" className="hover:text-black hover:font-bold">
               À Propos
             </Link>
           </li>
           <li>
-            <Link href="/events" className="hover:font-bold hover:text-black">
+            <Link href="/https://crazycharlyday.mingot.ovh/" className="hover:font-bold hover:text-black">
               Évènements
             </Link>
           </li>
           <li>
             <Link
-              href="/association"
+              href="https://crazycharlyday.mingot.ovh/html/association.html"
               className="hover:text-black hover:font-bold"
             >
               L'association
             </Link>
           </li>
           <li>
-            <Link href="/news" className="hover:text-black hover:font-bold">
+            <Link href="/https://crazycharlyday.mingot.ovh/" className="hover:text-black hover:font-bold">
               Actualités
             </Link>
           </li>
