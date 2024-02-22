@@ -18,6 +18,7 @@ const config = {
 		},
 		extend: {
 			fontFamily: {
+				archivoBlack: ['var(--font-archivo-black)', ...fontFamily.sans],
 				sans: ['var(--font-inter)', ...fontFamily.sans],
 			},
 			transitionTimingFunction: {
