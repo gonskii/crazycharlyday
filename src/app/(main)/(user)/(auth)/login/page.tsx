@@ -16,15 +16,14 @@ const LoginPage = () => {
         <div id="container">
 
             <Image
-                src= "./logo.svg"
+                src="./logo.svg"
                 alt="Description de l'image"
                 width={150} // Définissez la largeur de l'image
                 height={100} // Définissez la hauteur de l'image
-
             />
 
             <div id="containerLogin">
-                <h1>Welcome Back ! 👋</h1>
+                <h1 className='font-archivoBlack'>Welcome Back ! 👋</h1>
 
                 <form onSubmit={handleSubmit}>
                     <InputImg label="Email" IconComponent={Mail} typeInput="email" />
@@ -37,11 +36,6 @@ const LoginPage = () => {
 
                     <p id="register">Not a member ? Register now</p>
                 </form>
-            </div>
-
-            <div id="imageLogin">
-                <p>IMAGE</p>
-                <p>IMAGE</p>
             </div>
         </div>
     );
