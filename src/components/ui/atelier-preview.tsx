@@ -10,7 +10,7 @@ type props = {
 const AtelierPreview = (props: props) => {
   return (
     <Link href={props.href}>
-      <div className="bg-[#ffd8f2] rounded-sm flex flex-row justify-start space-x-8 rounded-sm">
+      <div className="bg-[#ffd8f2] hover:bg-[#f5afde] rounded-sm flex flex-row justify-start space-x-8 rounded-sm">
         <div className="flex items-center justify-center w-14 h-14 px-10 rounded-xl">
           <p className="text-[#a63882] font-bold text-2xl italic">{props.date}</p>
         </div>
