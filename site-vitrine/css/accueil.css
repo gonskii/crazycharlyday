@@ -1,9 +1,14 @@
-body {
+h1,
+header {
     font-family: "Archivo Black", sans-serif;
 }
 
 p {
     font-family: "Average Sans", sans-serif;
+}
+
+main {
+    margin-bottom: 40px;
 }
 
 a {
