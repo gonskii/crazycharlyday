@@ -15,6 +15,11 @@ header {
     margin-left: 20px;
 }
 
+#logo_aars {
+    width: 35%;
+    height: 35%;
+}
+
 header>.nav>ul {
     display: flex;
     list-style-type: none;
