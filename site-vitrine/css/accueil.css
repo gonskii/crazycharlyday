@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
 main {
     background-color: #FCFFFD;
 }
@@ -99,7 +104,40 @@ main>.article1>.contenu>div>button {
     border-radius: 10px;
 }
 
-.actualite>h1 {
+main>h1 {
     text-align: center;
     margin-top: 40px;
+}
+
+.actualite {
+    display: flex;
+    flex-direction: row;
+}
+
+.actualite>article:nth-child(1),
+.actualite>article:nth-child(3) {
+    background-image: url("../assets/creme.png");
+    background-position: right;
+}
+
+.actualite>article:nth-child(2) {
+    background-image: url("../assets/bonbon.png");
+    background-position: right;
+    background-size: auto 100%;
+}
+
+.actualite>.actu-article {
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.actualite>.actu-article>button {
+    background-color: #A63882;
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid #A63882;
+    border-radius: 10px;
+
 }
