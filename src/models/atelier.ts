@@ -2,7 +2,7 @@
 export default interface AtelierInterface {
     id?:number,
     titre:string,
-    descritpion:string,
+    description:string,
     date:Date,
     nbPlace:number
 }
