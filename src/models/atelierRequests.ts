@@ -21,7 +21,7 @@ export async function fetchPostAtelier(atelier: AtelierInterface) {
   });
 }
 
-export async function fetchPutUser(atelier: AtelierInterface) {
+export async function fetchPutAtelier(atelier: AtelierInterface) {
   await fetch("/api/atelier", {
     method: "PUT",
     headers: {
@@ -31,7 +31,7 @@ export async function fetchPutUser(atelier: AtelierInterface) {
     cache: "no-store",
   });
 }
-export async function fetchDeleteUser(id: number) {
+export async function fetchDeleteAtelier(id: number) {
   await fetch(`/api/atelier/${id}`, {
       method: "DELETE",
       headers: {
@@ -40,3 +40,13 @@ export async function fetchDeleteUser(id: number) {
       cache: "no-store",
   });
 }
+export async function fetchGetAtelierDate(date:Date) {
+  return await fetch(`/api/atelier/date/${date.getFullYear()}-${date.getMonth()}-${date.getDay()}`, {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
+    cache: "no-store",
+});
+}
+
