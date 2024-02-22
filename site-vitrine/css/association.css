@@ -1,0 +1,83 @@
+body {
+    font-family: "Archivo Black", sans-serif;
+}
+
+p {
+    font-family: "Average Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background-color: #FCFFFD;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#logo_aars {
+    width: 35%;
+    height: 35%;
+}
+
+header>.nav>ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+header>.nav>ul>li {
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+header>.nav>ul>li>a {
+    text-decoration: none;
+    color: #565D6D;
+}
+
+main>h1 {
+    text-align: center;
+}
+
+
+main>.article1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+main>.article1>.fondVert {
+    grid-column: 1/7;
+    padding-right: 20px;
+}
+
+main>.article1>.fondVert>img {
+    width: 100%;
+    /* Prend la largeur de la colonne */
+    height: auto;
+    /* Pour conserver les proportions de l'image */
+    max-width: 100%;
+    /* Assurez-vous que l'image ne dépasse pas la largeur de la colonne */
+    max-height: 100%;
+}
+
+main>.article1>.contenu {
+    grid-column: 7/13;
+}
+
+body>main>p {
+    width: 60%;
+    margin: auto;
+}
