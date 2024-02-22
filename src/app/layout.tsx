@@ -39,7 +39,6 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { readonly children: React.ReactNode }) => (
 	<html lang="en-US" className={cn('min-w-[360px] scroll-smooth', fonts)}>
 		<body className="flex !h-[unset] min-h-screen flex-1 flex-col bg-white font-sans antialiased">
-		<Header />
 			<main className="flex w-full max-w-[100vw] flex-col">{children}</main>
 		</body>
 	</html>
