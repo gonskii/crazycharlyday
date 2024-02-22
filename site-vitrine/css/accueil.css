@@ -249,6 +249,12 @@ footer div a {
     margin-left: 1em;
 }
 
+.video {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
 
 /* Media Queries pour le rendu responsive */
 
