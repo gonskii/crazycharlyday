@@ -13,6 +13,8 @@ const UserActivity = () => {
     const joursDeL = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven'];
     const [jourSelectionne, setJourSelectionne] = useState<number | null>(null);
 
+    
+
     /**
      * Au chargement
      */

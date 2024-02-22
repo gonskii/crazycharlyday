@@ -1,22 +1,22 @@
 import { Clock, PersonStanding } from "lucide-react";
 import "./cardActivity.css";
 
-interface CardActivityProps {
-    title: string;
-    horraire: string;
+export interface CardActivityProps {
+    titre: string ;
+    date: Date;
     description: string;
-    nbPlace: string;
-    categorie: string;
+    nbPlace: number;
+    categorie?: string;
   }
 
-const CardActivity = ({ title, horraire, description, nbPlace, categorie }: CardActivityProps) => {
+const CardActivity = ({ titre, date, description, nbPlace, categorie }: CardActivityProps) => {
     return (
         <div id="cardActivity">
-            <h1 className="font-archivoBlack" id="title">{title}</h1>
+            <h1 className="font-archivoBlack" id="title">{titre}</h1>
             <div id="informations">
                 <div id="horraire">
                     <Clock />
-                    <p id="horraireTxt">{horraire} AM</p>
+                    <p id="horraireTxt">{date.getHours().toString()} AM</p>
                 </div>
                 <div id="description">
                     <p>{description}</p>
