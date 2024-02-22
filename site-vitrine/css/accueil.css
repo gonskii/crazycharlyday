@@ -243,3 +243,96 @@ footer div a {
 .tab {
     margin-left: 1em;
 }
+
+
+/* Media Queries pour le rendu responsive */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo_aars {
+        width: 50%;
+        height: auto;
+    }
+
+    main > .article1 {
+        width: 90%;
+    }
+
+    main > .article1 > .fondVert {
+        grid-column: span 12;
+    }
+
+    main > .article1 > .contenu {
+        grid-column: span 12;
+    }
+
+    .article2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .article2 > p {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer div:last-child {
+        margin-bottom: 0;
+    }
+
+    footer div a {
+        padding-bottom: 0;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 5px 10px;
+      }
+
+    
+      header > .nav > ul {
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px; /* Gap between menu items */
+      }
+    
+      header > .nav > ul > li {
+        padding-right: 10px; /* Add some space between items */
+      }
+}
+
+@media screen and (max-width: 480px) {
+    main > .article1 {
+        width: 100%;
+    }
+
+    main > .article1 > .fondVert, main > .article1 > .contenu {
+        padding: 10px;
+    }
+
+    .carousel {
+        height: 200px;
+    }
+}
+
+
