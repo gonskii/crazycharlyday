@@ -12,7 +12,7 @@ const draftAteliers = {
 }
 const NextActivities = () => {
     return ( 
-        <div className="flex flex-col p-24 gap-y-12">
+        <div className="flex col p-24 gap-y-12">
           <h2 className="font-archivoBlack text-4xl"> Les prochains ateliers</h2>
           <AtelierPreview 
             date={draftAteliers.a.date}
